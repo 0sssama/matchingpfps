@@ -36,8 +36,8 @@ function svlevui() {
     let nxtn = Math.floor(Math.random() * ttl) + 1
     console.log(`${nxtn} is the new number, ${old} is the old number`)
     if (!(nxtn === old)) {
-        let pco = `./imgs/${nxtn}_m.jpg`
-        let pct = `./imgs/${nxtn}_f.jpg`
+        let pco = `./imgs/${nxtn}_left.jpg`
+        let pct = `./imgs/${nxtn}_right.jpg`
         old = nxtn
         ptpcs(pco, pct)
     } else {
