@@ -1,4 +1,4 @@
-var ttl = 5
+var ttl = 15
 var cnvs = document.createElement('div')
 cnvs.classList.add('imgs-canvas')
 var img1 = document.createElement('img')
