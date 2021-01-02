@@ -7,10 +7,10 @@ var img2 = document.createElement('img')
 img2.classList.add('img2')
 let nxtn = Math.floor(Math.random() * ttl) + 1
 var old = nxtn
-let pco = `./imgs/${nxtn}_m.jpg`
-let pct = `./imgs/${nxtn}_f.jpg`
-img1.src = pco
+let pco = `./imgs/${nxtn}_left.jpg`
+let pct = `./imgs/${nxtn}_right.jpg`
 img2.src = pct
+img1.src = pco
 var img1container = document.createElement('a')
 img1container.classList.add('img1-container')
 img1container.setAttribute('href', pco)
@@ -34,7 +34,6 @@ cnvs.appendChild(img2container)
 $('.imgs-wrapper').append(cnvs)
 function svlevui() {
     let nxtn = Math.floor(Math.random() * ttl) + 1
-    console.log(`${nxtn} is the new number, ${old} is the old number`)
     if (!(nxtn === old)) {
         let pco = `./imgs/${nxtn}_left.jpg`
         let pct = `./imgs/${nxtn}_right.jpg`
