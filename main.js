@@ -6,7 +6,8 @@ img1.classList.add('img1')
 var img2 = document.createElement('img')
 img2.classList.add('img2')
 let nxtn = Math.floor(Math.random() * ttl) + 1
-var old = nxtn
+var old1, old2, old3, old4, old5
+old1 = nxtn
 let pco = `./imgs/${nxtn}_left.jpg`
 let pct = `./imgs/${nxtn}_right.jpg`
 img2.src = pct
@@ -32,12 +33,40 @@ img2container.appendChild(hoverdwnld2)
 cnvs.appendChild(img1container)
 cnvs.appendChild(img2container)
 $('.imgs-wrapper').append(cnvs)
+
+
 function svlevui() {
     let nxtn = Math.floor(Math.random() * ttl) + 1
-    if (!(nxtn === old)) {
+    if (!(nxtn === old1) && !(nxtn === old2) && !(nxtn === old3) && !(nxtn === old4) && !(nxtn === old5)) {
         let pco = `./imgs/${nxtn}_left.jpg`
         let pct = `./imgs/${nxtn}_right.jpg`
-        old = nxtn
+        if (old5) {
+            old5 = old4
+            old4 = old3
+            old3 = old2 
+            old2 = old1
+        } else {
+            if (old4) {
+                old5 = old4
+                old4 = old3
+                old3 = old2
+                old2 = old1
+            } else {
+                if (old3) {
+                    old4 = old3
+                    old3 = old2
+                    old2 = old1
+                } else {
+                    if (old2) {
+                        old3 = old2
+                        old2 = old1
+                    } else {
+                        old2 = old1
+                    }
+                }
+            }
+        }
+        old1 = nxtn
         ptpcs(pco, pct)
     } else {
         svlevui()
