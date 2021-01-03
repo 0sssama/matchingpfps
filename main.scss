@@ -90,19 +90,21 @@ main {
                 margin: 1rem 0 2rem;
             }
             button {
-                color: var(--bg);
-                font-weight: 600;
                 background-color: var(--text);
                 border-radius: 10px;
                 box-shadow: 0px 3px 0 rgb(232, 103, 255);
                 transition: background-color 200ms ease,
                             box-shadow 200ms ease;
-                padding: 0.6rem 1.5rem;
+                padding: 0.5rem 1.4rem;
                 cursor: pointer;
                 text-transform: uppercase;
                 border: none; outline: none;
+                img {
+                    width: 16px;
+                    height: 15px;
+                }
                 &:hover {
-                    background-color: rgb(249, 215, 255);
+                    background-color: rgb(250, 225, 255);
                     box-shadow: 0 0 0 rgb(232, 103, 255);
                 }
             }
