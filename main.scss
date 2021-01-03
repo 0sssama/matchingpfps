@@ -37,10 +37,14 @@ body {
         --bgLowOp: rgba(254, 248, 255, 0.7)
     }
     color: var(--text);
-    background-image: url('./bg.gif');
+    background-image: url('./loading.gif');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 25px;
+    // background-image: url('./bg.gif');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 }
 .bg-effect {
     position: fixed;

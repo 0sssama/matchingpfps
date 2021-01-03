@@ -15,11 +15,11 @@ img1.src = pco
 var img1container = document.createElement('a')
 img1container.classList.add('img1-container')
 img1container.setAttribute('href', pco)
-img1container.setAttribute('download', "download")
+img1container.setAttribute('download', "matchingpfps")
 var img2container = document.createElement('a')
 img2container.classList.add('img2-container')
 img2container.setAttribute('href', pct)
-img2container.setAttribute('download', "download")
+img2container.setAttribute('download', "matchingpfps")
 var hoverdwnld = document.createElement('div')
 hoverdwnld.classList.add('hover-dwnld')
 hoverdwnld.textContent = 'CLICK TO DOWNLOAD'
@@ -78,4 +78,14 @@ const ptpcs = (a, b) => {
     $('.img2').attr('src', b)
     $('.img1-container').attr('href', a)
     $('.img2-container').attr('href', b)
+}
+
+
+window.onload = () => {
+    var downloadingBgImage = new Image()
+    downloadingBgImage.onload = () => {
+        $('body').css('background-image', 'url(\'./bg.gif\')')
+        $('body').css('background-size', 'cover')
+    }
+    downloadingBgImage.src = './bg.gif'
 }
