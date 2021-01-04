@@ -80,12 +80,12 @@ const ptpcs = (a, b) => {
     $('.img2-container').attr('href', b)
 }
 
-
+/*
 window.onload = () => {
-    var downloadingBgImage = new Image()
+    var downloadingBgImage = new Video()
     downloadingBgImage.onload = () => {
         $('body').css('background-image', 'url(\'./bg.gif\')')
         $('body').css('background-size', 'cover')
     }
     downloadingBgImage.src = './bg.gif'
-}
+}*/
