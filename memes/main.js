@@ -1,5 +1,5 @@
 var memesImages = [
-    11, 12, 22
+    11, 12, 22, 31, 33
 ]
 var imagesInPage = []
 var host = '.'
@@ -12,12 +12,12 @@ const addCoupleImage = () => {
         var coupleImageHTML = `
             <div class="${id} image-couple">
                 <a href="${host}/imgs/${id}_left.jpg" download="image_1" class="${id} img1-container">
-                    <img onload="hideLoadings(${id})" class="img1" src="https://matchingpfps.com/imgs/${id}_left.jpg" />
+                    <img onload="hideLoadings(${id})" class="img1" src="${host}/imgs/${id}_left.jpg" />
                     <div class="${id} loading-pic pic1 show"></div>
                     <div class="${id} hover-dwnld">Click To Download</div>
                 </a>
                 <a href="${host}/imgs/${id}_right.jpg" download="image_2" class="${id} img2-container">
-                    <img onload="hideLoadings(${id})" class="img2" src="https://matchingpfps.com/imgs/${id}_right.jpg" />
+                    <img onload="hideLoadings(${id})" class="img2" src="${host}/imgs/${id}_right.jpg" />
                     <div class="${id} loading-pic pic2 show"></div>
                     <div class="${id} hover-dwnld">Click To Download</div>
                 </a>
