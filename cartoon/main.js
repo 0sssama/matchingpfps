@@ -1,19 +1,13 @@
-var animeImages = [
-    1, 2, 3, 4, 5, 6, 7, 
-    14, 15,16, 17, 18, 19, 
-    20, 21, 23, 24, 25, 26, 
-    27, 28, 29, 30, 31, 39, 
-    41, 46, 48, 49, 50, 51, 
-    52, 55, 56, 57, 58, 59, 
-    60, 61, 62, 63, 65, 66,
-    67, 68, 69, 70, 72, 76
-
-]
+var cartoonImages = [
+    11, 45, 46, 47, 53,
+    54, 64, 71, 73, 74,
+    75
+    ]
 var imagesInPage = []
 var host = '.'
 var chunkAmount = 10
 const addCoupleImage = () => {
-    let imagesNotInPage = animeImages.filter(id=>!imagesInPage.includes(id))
+    let imagesNotInPage = cartoonImages.filter(id=>!imagesInPage.includes(id))
     if (!imagesNotInPage.length <= 0) {
         var id = imagesNotInPage[Math.floor(Math.random()*imagesNotInPage.length)]
         imagesInPage.push(id)
@@ -43,7 +37,7 @@ const addCoupleImages = (amount) => {
 }
 const viewMore = () => {
     $('.view-more').remove()
-    let imagesNotInPage = animeImages.filter(id=>!imagesInPage.includes(id))
+    let imagesNotInPage = cartoonImages.filter(id=>!imagesInPage.includes(id))
     if (imagesNotInPage.length <= chunkAmount) {
         for (let i = 0; i < imagesNotInPage.length; i ++) {
             addCoupleImage()
@@ -62,8 +56,8 @@ const viewMoreHTML = `
     </div>
 `
 window.onload = () => {
-    if (animeImages.length <= chunkAmount) {
-        for (let i = 0; i < animeImages.length; i ++) {
+    if (cartoonImages.length <= chunkAmount) {
+        for (let i = 0; i < cartoonImages.length; i ++) {
             addCoupleImage()
         }
     } else {

@@ -16,8 +16,13 @@ const navCode = `
                 </a>
             </li>
             <li>
-                <a href="/cats">
-                    Cats
+                <a href="/pets">
+                    Pets
+                </a>
+            </li>
+            <li>
+                <a href="/cartoon">
+                    Cartoon
                 </a>
             </li>
         </ul>

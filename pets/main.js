@@ -1,11 +1,12 @@
-var catImages = [
-    8, 9, 10, 13, 32, 33
+var petImages = [
+    8, 9, 10, 13, 32, 33, 36,
+    37, 38, 39, 44, 
 ]
 var imagesInPage = []
 var host = '.'
 var chunkAmount = 10
 const addCoupleImage = () => {
-    let imagesNotInPage = catImages.filter(id=>!imagesInPage.includes(id))
+    let imagesNotInPage = petImages.filter(id=>!imagesInPage.includes(id))
     if (!imagesNotInPage.length <= 0) {
         var id = imagesNotInPage[Math.floor(Math.random()*imagesNotInPage.length)]
         imagesInPage.push(id)
@@ -35,7 +36,7 @@ const addCoupleImages = (amount) => {
 }
 const viewMore = () => {
     $('.view-more').remove()
-    let imagesNotInPage = catImages.filter(id=>!imagesInPage.includes(id))
+    let imagesNotInPage = petImages.filter(id=>!imagesInPage.includes(id))
     if (imagesNotInPage.length <= chunkAmount) {
         for (let i = 0; i < imagesNotInPage.length; i ++) {
             addCoupleImage()
@@ -54,8 +55,8 @@ const viewMoreHTML = `
     </div>
 `
 window.onload = () => {
-    if (catImages.length <= chunkAmount) {
-        for (let i = 0; i < catImages.length; i ++) {
+    if (petImages.length <= chunkAmount) {
+        for (let i = 0; i < petImages.length; i ++) {
             addCoupleImage()
         }
     } else {
