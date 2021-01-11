@@ -4,7 +4,7 @@ var petImages = [
 ]
 var imagesInPage = []
 var host = '.'
-var chunkAmount = 10
+var chunkAmount = 9
 const addCoupleImage = () => {
     let imagesNotInPage = petImages.filter(id=>!imagesInPage.includes(id))
     if (!imagesNotInPage.length <= 0) {
