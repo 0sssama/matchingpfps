@@ -1,4 +1,4 @@
-var ttl = 31
+var ttl = 32
 var host = '.'
 var cnvs = document.createElement('div')
 cnvs.classList.add('imgs-canvas')

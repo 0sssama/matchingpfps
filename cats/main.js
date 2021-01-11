@@ -1,5 +1,5 @@
 var catImages = [
-    8, 9, 10, 13
+    8, 9, 10, 13, 32
 ]
 var imagesInPage = []
 var host = '.'
