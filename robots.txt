@@ -2,4 +2,9 @@
 User-agent: *
 Disallow: /imgs
 
+# Group 2
+User-agent: Googlebot
+Allow: /
+Allow: /imgs
+
 Sitemap: https://matchingpfps.com/sitemap.xml
