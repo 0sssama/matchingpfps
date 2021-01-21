@@ -1,6 +1,7 @@
 var petImages = [
     8, 9, 10, 13, 32, 33, 36,
-    37, 38, 39, 44, 
+    37, 38, 39, 44, 80, 82,
+    
 ]
 var imagesInPage = []
 var host = '.'

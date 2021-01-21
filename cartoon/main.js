@@ -1,7 +1,7 @@
 var cartoonImages = [
     11, 45, 46, 47, 53,
     54, 64, 71, 73, 74,
-    75
+    75, 81, 96, 97, 99
     ]
 var imagesInPage = []
 var host = '.'
