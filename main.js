@@ -1,4 +1,4 @@
-var ttl = 99
+var ttl = 100
 var host = '.'
 var cnvs = document.createElement('div')
 cnvs.classList.add('imgs-canvas')
