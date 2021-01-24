@@ -16,11 +16,11 @@ img1.src = pco
 var img1container = document.createElement('a')
 img1container.classList.add('img1-container')
 img1container.setAttribute('href', pco)
-img1container.setAttribute('download', "matchingpfps")
+img1container.setAttribute('download', "image_1.jpg")
 var img2container = document.createElement('a')
 img2container.classList.add('img2-container')
 img2container.setAttribute('href', pct)
-img2container.setAttribute('download', "matchingpfps")
+img2container.setAttribute('download', "image_2.jpg")
 var hoverdwnld = document.createElement('div')
 hoverdwnld.classList.add('hover-dwnld')
 hoverdwnld.textContent = 'CLICK TO DOWNLOAD'
